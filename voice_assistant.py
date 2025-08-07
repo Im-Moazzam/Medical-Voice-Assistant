@@ -1,14 +1,20 @@
 import os
 import time
+
+import google.generativeai as genai
 from dotenv import load_dotenv
-from speech_recognition import Microphone, Recognizer, UnknownValueError, WaitTimeoutError
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.messages import SystemMessage
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_google_genai import ChatGoogleGenerativeAI
-import google.generativeai as genai
+from speech_recognition import (
+    Microphone,
+    Recognizer,
+    UnknownValueError,
+    WaitTimeoutError,
+)
 
 # --- Setup ---
 load_dotenv()
