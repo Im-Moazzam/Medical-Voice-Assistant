@@ -111,4 +111,3 @@ final_summary = chain.invoke({"input": summary_input}, config={"configurable": {
 
 print("\n--- Pre-Medical Summary ---\n")
 print(final_summary)
-print("nothing")
