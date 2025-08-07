@@ -1,5 +1,6 @@
-import openai
 import time
+
+import openai
 from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.messages import SystemMessage
